@@ -7,7 +7,7 @@
     <groupId>jsp-boot-tst</groupId>
     <artifactId>jsp-boot-tst</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -50,6 +50,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+        					<finalName>svc</finalName>
+        				</configuration>
             </plugin>
         </plugins>
     </build>
